@@ -17,43 +17,15 @@ The app demonstrates the use of Intents in two ways:
 
 # Words app
 Words app
+<p align="center">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg    " width="350" title="hover text">
+</p>
 
-[comment]: <> (<p align="center">)
+<p align="center">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/3.jpeg" width="350" title="hover text">
+</p>
 
-[comment]: <> (  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg"  title="hover text">)
-
-[comment]: <> (</p>)
-
-<img
-align="left"
-width="100"
-height="100"
-src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg"
->
-
-[comment]: <> (<p align="center">)
-
-[comment]: <> (  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/3.jpeg"  title="hover text">)
-
-[comment]: <> (</p>)
-
-<img
-align="left"
-width="100"
-height="100"
-src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/3.jpeg"
->
-
-[comment]: <> (<p align="center">)
-
-[comment]: <> (  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/2.jpeg"  title="hover text">)
-
-[comment]: <> (</p>)
-
-<img
-align="left"
-width="100"
-height="100"
-src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/2.jpeg"
->
+<p align="center">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/2.jpeg" width="350" title="hover text">
+</p>
 
