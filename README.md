@@ -16,7 +16,7 @@ The app demonstrates the use of Intents in two ways:
 4. Build and run .
 
 # Words app
-Tip-Time-App
+Words app
 <p align="center">
   <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg    " width="350" title="hover text">
 </p>
