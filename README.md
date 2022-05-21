@@ -18,12 +18,14 @@ The app demonstrates the use of Intents in two ways:
 # Words app
 Words app
 <p align="center">
-  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg    " width="350" title="hover text">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/1.jpeg"  title="hover text">
 </p>
+
 <p align="center">
-  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/2.jpeg" width="350" title="hover text">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/3.jpeg"  title="hover text">
 </p>
+
 <p align="center">
-  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/3.jpeg" width="350" title="hover text">
+  <img src="https://github.com/sourabhkumar47/Words-App-2/blob/master/Screenshots/2.jpeg"  title="hover text">
 </p>
 
