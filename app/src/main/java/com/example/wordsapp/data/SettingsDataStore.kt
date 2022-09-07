@@ -3,23 +3,42 @@ package com.example.wordsapp.data
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.emptyPreferences
 import androidx.datastore.preferences.preferencesDataStore
-import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
+import java.io.IOException
 import java.util.concurrent.Flow
 import java.util.prefs.Preferences
 
+/**
+ * Class that handles saving and retrieving layout setting preferences
+ */
 
 private const val LAYOUT_PREFERENCES_NAME = "layout_preferences"
 
 // Create a DataStore instance using the preferencesDataStore delegate, with the Context as
 // receiver.
-private val Context.dataStore : DataStore<Preferences> by preferencesDataStore(
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = LAYOUT_PREFERENCES_NAME
 )
 
-class SettingsDataStore(context: Context) {
+class SettingsDataStore(preference_datastore: DataStore<Preferences>) {
     private val IS_LINEAR_LAYOUT_MANAGER = booleanPreferencesKey("is_linear_layout_manager")
+
+    val preferenceFlow: Flow<Boolean> = preference_datastore.data
+        .catch {
+            if (it is IOException) {
+                it.printStackTrace()
+                emit(emptyPreferences())
+            } else {
+                throw it
+            }
+        }
+        .map {preferences ->
+            // On the first run of the app, we will use LinearLayoutManager by default
+            preferences[IS_LINEAR_LAYOUT_MANAGER] ?: true
+        }
 
     //Write to the Preferences DataStore
     suspend fun saveLayoutToPreferencesStore(isLinearLayoutManager: Boolean, context: Context) {
@@ -27,10 +46,4 @@ class SettingsDataStore(context: Context) {
             preferences[IS_LINEAR_LAYOUT_MANAGER] = isLinearLayoutManager
         }
     }
-
-    val preferenceFlow: Flow<Boolean> = context.dataStore.data
-        .map {
-            preferences ->
-            preferences[IS_LINEAR_LAYOUT_MANAGER] ?: true
-        }
 }
